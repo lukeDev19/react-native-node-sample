@@ -5,7 +5,7 @@ export const searchBooks = createAsyncThunk(
   'books/searchBooks',
   async query => {
     const response = await axios.get(
-      `http://backend-api-url/search?query=${query}`,
+      `http://backend-api-url/books/search?query=${query}`,
     );
     return response.data;
   },
